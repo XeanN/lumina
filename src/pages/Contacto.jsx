@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Section from "../components/Section";
 import AlertBox from "../components/AlertBox";
+import Seo from "../components/Seo";
 import { lumina } from "../data/siteContent";
 
 export default function Contacto() {
@@ -20,6 +21,10 @@ export default function Contacto() {
       title="Contacto / Orientación"
       subtitle="Si quieres dar un primer paso, escribe con calma. Tu privacidad importa."
     >
+      <Seo
+        title="Contacto"
+        description="Escribe a LÚMINA para recibir orientación emocional gratuita y confidencial. Respondemos en 24 a 48 horas."
+      />
       <AlertBox title="Aviso ético">
         <p className="small">{lumina.ethicalNote}</p>
       </AlertBox>
@@ -58,6 +63,21 @@ export default function Contacto() {
           </p>
           <p className="muted">
             Si estás en riesgo inmediato, ve a <a className="link" href="/ayuda-urgente">Ayuda urgente</a>.
+          </p>
+
+          <h3 className="h3 mt">¿Qué esperar después de escribir?</h3>
+          <p className="muted">
+            En esta fase, alguien del equipo de LÚMINA lee cada mensaje
+            personalmente — no hay un chat automático todavía. Respondemos
+            en un plazo de 24 a 48 horas.
+          </p>
+
+          <h3 className="h3 mt">¿Prefieres escribir por WhatsApp?</h3>
+          <p className="muted">
+            {/* TODO: reemplazar por tu número real de WhatsApp Business */}
+            <a className="btn btn-ghost" href="https://wa.me/51900000000" target="_blank" rel="noreferrer">
+              Escribir por WhatsApp
+            </a>
           </p>
         </div>
       </div>

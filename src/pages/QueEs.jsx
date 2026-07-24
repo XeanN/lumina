@@ -1,11 +1,13 @@
 import React from "react";
 import Section from "../components/Section";
 import Card from "../components/Card";
+import Seo from "../components/Seo";
 import { lumina } from "../data/siteContent";
 
 export default function QueEs() {
   return (
     <Section title="¿Qué es LÚMINA?" subtitle={lumina.tagline}>
+      <Seo title="¿Qué es LÚMINA?" description={lumina.mission} />
       <div className="stack">
         <p className="lead">
           <strong>{lumina.name}</strong> es una iniciativa social–tecnológica de orientación y prevención

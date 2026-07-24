@@ -1,11 +1,16 @@
 import React from "react";
 import Section from "../components/Section";
 import AlertBox from "../components/AlertBox";
+import Seo from "../components/Seo";
 import { lumina } from "../data/siteContent";
 
 export default function Privacidad() {
   return (
     <Section title="Privacidad" subtitle="Confianza, límites y respeto por tus datos.">
+      <Seo
+        title="Privacidad"
+        description="Cómo LÚMINA protege tu información: qué datos no recolectamos y qué límites éticos aplicamos en esta fase inicial."
+      />
       <AlertBox title="Resumen (Fase 1)">
         <ul className="list">
           <li>Este sitio es informativo y de orientación preventiva.</li>

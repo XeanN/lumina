@@ -4,11 +4,16 @@ import Section from "../components/Section";
 import Card from "../components/Card";
 import AlertBox from "../components/AlertBox";
 import Roadmap from "../components/Roadmap";
+import Seo from "../components/Seo";
 import { lumina } from "../data/siteContent";
 
 export default function Home() {
   return (
     <>
+      <Seo
+        title="Inicio"
+        description="LÚMINA es un espacio seguro de orientación y prevención en bienestar emocional para mujeres, niños, adolescentes y adultos."
+      />
       <section className="hero">
         <div className="container hero-inner">
           <div className="hero-copy">
