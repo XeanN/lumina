@@ -74,8 +74,7 @@ export default function Contacto() {
 
           <h3 className="h3 mt">¿Prefieres escribir por WhatsApp?</h3>
           <p className="muted">
-            {/* TODO: reemplazar por tu número real de WhatsApp Business */}
-            <a className="btn btn-ghost" href="https://wa.me/51900000000" target="_blank" rel="noreferrer">
+            <a className="btn btn-ghost" href="https://wa.me/51969980152" target="_blank" rel="noreferrer">
               Escribir por WhatsApp
             </a>
           </p>
