@@ -35,7 +35,7 @@ export default function Navbar() {
 
         <div className="nav-cta">
           <Link className="btn btn-primary" to="/contacto">
-            Quiero orientación
+            Hablar con Lumina
           </Link>
         </div>
       </div>

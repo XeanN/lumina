@@ -1,7 +1,14 @@
 import React from "react";
+import { User, UserRound, Baby } from "lucide-react";
 import Section from "../components/Section";
 import Card from "../components/Card";
 import { lumina } from "../data/siteContent";
+
+const icons = {
+  woman: <User size={20} />,
+  teen: <UserRound size={20} />,
+  child: <Baby size={20} />,
+};
 
 export default function ParaQuien() {
   return (
@@ -11,7 +18,7 @@ export default function ParaQuien() {
     >
       <div className="grid grid-3">
         {lumina.audiences.map((a) => (
-          <Card key={a.title} title={a.title} icon={a.icon}>
+          <Card key={a.title} title={a.title} icon={icons[a.icon]}>
             <ul className="list">
               {a.bullets.map((b) => <li key={b}>{b}</li>)}
             </ul>

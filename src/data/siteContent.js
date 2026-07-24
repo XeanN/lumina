@@ -23,17 +23,17 @@ export const lumina = {
 
   audiences: [
     {
-      icon: "👩",
+      icon: "woman",
       title: "Mujeres",
       bullets: ["Ansiedad y carga mental", "Violencia emocional", "Soledad y estrés", "Orientación para dar el primer paso"],
     },
     {
-      icon: "🧑",
+      icon: "teen",
       title: "Adolescentes",
       bullets: ["Estrés y presión social", "Confusión emocional", "Autoestima", "Orientación anónima y sin juicio"],
     },
     {
-      icon: "👧",
+      icon: "child",
       title: "Niños (a través de adultos)",
       bullets: ["Guías para madres/padres/tutores", "Rutinas emocionales simples", "Lenguaje emocional", "Acompañamiento seguro"],
     },

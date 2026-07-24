@@ -15,7 +15,7 @@ export default function Home() {
             <p className="hero-subtitle">{lumina.heroSubtitle}</p>
 
             <div className="hero-actions">
-              <Link className="btn btn-primary" to="/contacto">Quiero orientación</Link>
+              <Link className="btn btn-primary" to="/contacto">Hablar con Lumina</Link>
               <Link className="btn btn-ghost" to="/que-es">Conocer LÚMINA</Link>
             </div>
 
@@ -27,13 +27,6 @@ export default function Home() {
                 </p>
               </AlertBox>
             </div>
-          </div>
-
-          <div className="hero-panel" aria-hidden="true">
-            <div className="hero-badge">Espacio seguro</div>
-            <div className="hero-badge">Prevención</div>
-            <div className="hero-badge">Sin juicio</div>
-            <div className="hero-badge">Tecnología ética</div>
           </div>
         </div>
       </section>
@@ -53,7 +46,7 @@ export default function Home() {
         <div className="cta-strip">
           <div>
             <h2 className="h2">¿Para quién es LÚMINA?</h2>
-            <p className="muted">Mujeres, adolescentes y niños (a través de adultos).</p>
+            <p className="muted">Mujeres, adolescentes, niños y adultos que necesitan un primer apoyo.</p>
           </div>
           <div className="cta-actions">
             <Link className="btn btn-primary" to="/para-quien">Ver público</Link>
