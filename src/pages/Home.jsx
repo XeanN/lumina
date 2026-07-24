@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Section from "../components/Section";
 import Card from "../components/Card";
 import AlertBox from "../components/AlertBox";
+import Roadmap from "../components/Roadmap";
 import { lumina } from "../data/siteContent";
 
 export default function Home() {
@@ -27,6 +28,14 @@ export default function Home() {
                 </p>
               </AlertBox>
             </div>
+          </div>
+
+          <div className="media mt">
+            {/* TODO: reemplazar por foto real — idealmente tú o tu equipo,
+                luz cálida, sin poses forzadas de "persona triste mirando
+                la ventana". Alternativa: una imagen abstracta de luz/amanecer
+                que refuerce el nombre LÚMINA. */}
+            <img src="https://picsum.photos/seed/lumina-hero/1200/750" alt="Persona en un momento de calma, luz cálida" />
           </div>
         </div>
       </section>
@@ -53,6 +62,43 @@ export default function Home() {
             <Link className="btn btn-ghost" to="/recursos">Recursos gratis</Link>
           </div>
         </div>
+      </Section>
+
+      <Section
+        title="Cómo funciona"
+        subtitle="Tú siempre tienes el control de la conversación."
+      >
+        <div className="grid grid-3">
+          {lumina.howItWorks.map((s) => (
+            <Card key={s.step} title={s.title}>
+              <p className="muted">{s.desc}</p>
+            </Card>
+          ))}
+        </div>
+      </Section>
+
+      <Section
+        title="Conócenos"
+        subtitle="Detrás de LÚMINA hay personas reales, no solo tecnología."
+      >
+        <div className="video-card">
+          {/* TODO: reemplazar con video real (30-60s). Contenido sugerido:
+              alguien del equipo explicando en primera persona por qué existe
+              LÚMINA. No usar esta caja sin video real antes de publicar —
+              un video falso/vacío es peor que no tener nada. */}
+          <img src="https://picsum.photos/seed/lumina-video/1200/675" alt="" aria-hidden="true" />
+          <div className="play-badge">
+            <div className="play-icon" aria-hidden="true">▶</div>
+            <p className="small">Video pendiente: presentación del equipo (30-60s)</p>
+          </div>
+        </div>
+      </Section>
+
+      <Section
+        title="Hacia dónde vamos"
+        subtitle="LÚMINA crece por fases. Así lo estamos construyendo."
+      >
+        <Roadmap items={lumina.roadmap} />
       </Section>
     </>
   );

@@ -7,6 +7,7 @@ import QueEs from "./pages/QueEs.jsx";
 import ParaQuien from "./pages/ParaQuien.jsx";
 import QueHacemos from "./pages/QueHacemos.jsx";
 import Recursos from "./pages/Recursos.jsx";
+import RecursoDetalle from "./pages/RecursoDetalle.jsx";
 import AyudaUrgente from "./pages/AyudaUrgente.jsx";
 import Manifiesto from "./pages/Manifiesto.jsx";
 import Contacto from "./pages/Contacto.jsx";
@@ -21,6 +22,7 @@ export default function App() {
         <Route path="/para-quien" element={<ParaQuien />} />
         <Route path="/que-hacemos" element={<QueHacemos />} />
         <Route path="/recursos" element={<Recursos />} />
+        <Route path="/recursos/:slug" element={<RecursoDetalle />} />
         <Route path="/ayuda-urgente" element={<AyudaUrgente />} />
         <Route path="/manifiesto" element={<Manifiesto />} />
         <Route path="/contacto" element={<Contacto />} />

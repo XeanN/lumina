@@ -18,7 +18,7 @@ export default function ParaQuien() {
     >
       <div className="grid grid-3">
         {lumina.audiences.map((a) => (
-          <Card key={a.title} title={a.title} icon={icons[a.icon]}>
+          <Card key={a.title} title={a.title} icon={icons[a.icon]} image={a.image}>
             <ul className="list">
               {a.bullets.map((b) => <li key={b}>{b}</li>)}
             </ul>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Section from "../components/Section";
 import Card from "../components/Card";
 import { lumina } from "../data/siteContent";
@@ -11,14 +12,11 @@ export default function Recursos() {
     >
       <div className="grid grid-3">
         {lumina.resources.map((r) => (
-          <Card key={r.title} title={r.title}>
+          <Card key={r.slug} title={r.title}>
             <p className="muted">{r.desc}</p>
-            <a className="link" href={r.href} onClick={(e)=>e.preventDefault()}>
+            <Link className="link" to={`/recursos/${r.slug}`}>
               {r.linkText} →
-            </a>
-            <p className="small muted" style={{marginTop: 10}}>
-              (Luego reemplazamos esto por rutas reales: /recursos/...)
-            </p>
+            </Link>
           </Card>
         ))}
       </div>
