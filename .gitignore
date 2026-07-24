@@ -164,3 +164,4 @@ dist-ssr
 *.sw?
 
 node_modules/
+.claude

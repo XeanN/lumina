@@ -34,9 +34,9 @@ export default function Navbar() {
         </nav>
 
         <div className="nav-cta">
-          <Link className="btn btn-primary" to="/contacto">
+          <a className="btn btn-primary" href="https://chatlumina.aliiatech.com">
             Hablar con Lumina
-          </Link>
+          </a>
         </div>
       </div>
     </header>

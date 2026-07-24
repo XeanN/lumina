@@ -21,7 +21,7 @@ export default function Home() {
             <p className="hero-subtitle">{lumina.heroSubtitle}</p>
 
             <div className="hero-actions">
-              <Link className="btn btn-primary" to="/contacto">Hablar con Lumina</Link>
+              <a className="btn btn-primary" href="https://chatlumina.aliiatech.com">Hablar con Lumina</a>
               <Link className="btn btn-ghost" to="/que-es">Conocer LÚMINA</Link>
             </div>
 
